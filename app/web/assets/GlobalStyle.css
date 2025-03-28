@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Robot';
+    src: url(./fonts/Roboto-VariableFont_wdth\,wght.ttf);
+}
+
+body{
+    background-color: black ;
+}
+
+div{
+    margin-top: 10px;
+}
