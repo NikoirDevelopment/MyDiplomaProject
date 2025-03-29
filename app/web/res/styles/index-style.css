@@ -1,0 +1,90 @@
+@media (max-width: 768px) {
+    
+}
+
+.topPanel{
+    background-color: white;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.topPanel-homeBtn{
+    height: 50px;
+    width: 200px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    font-family: Robot;
+    font-weight: bold;
+    font-size: 24pt;
+}
+
+.topPanel-loginBtn{
+    height: 30px;
+    width: 80px;
+    float: right;
+    margin: 10px 15px 0px 0px;
+
+    border-radius: 5px;
+    background-color: black;
+
+    font-family: Robot;
+    font-weight: bold;
+    font-size: 14pt;
+    color: white;
+
+    cursor: pointer;
+}
+
+.infoPanel_1 {
+    background-color: white;
+    min-height: 450px; /* Изменили height на min-height */
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden; /* Добавили для обрезания выходящих за границы элементов */
+}
+
+.infoPanel_1-container {
+    position: relative;
+    margin: 2vw 0; /* Адаптивный отступ */
+    width: 100%;
+    overflow: hidden;
+}
+
+.infoPanel_1-trackLeft,
+.infoPanel_1-trackRight {
+    display: inline-flex;
+    white-space: nowrap;
+    will-change: transform; /* Оптимизация для браузера */
+}
+
+.infoPanel_1-item {
+    text-transform: uppercase;
+    font-size: 5vw; /* Адаптивный размер шрифта */
+    font-family: Benzin;
+    font-weight: 600;
+    margin: 0 3vw; /* Адаптивные отступы */
+    flex-shrink: 0;
+    position: relative;
+    padding: 0 2vw;
+}
+
+@keyframes animationItemLeft {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-100% + 100vw)); }
+}
+
+@keyframes animationItemRight {
+    0% { transform: translateX(calc(-100% + 100vw)); }
+    100% { transform: translateX(0); }
+}
+
+/* Для мобильных устройств */
+@media (max-width: 768px) {
+    .infoPanel_1-item {
+        font-size: 8vw;
+        margin: 0 5vw;
+    }
+}
