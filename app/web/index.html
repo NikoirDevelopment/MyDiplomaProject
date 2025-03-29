@@ -2,50 +2,63 @@
 <html lang="ru">
 <head>
     <title>Knowledge+</title>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
-
-
     <link rel="icon" type="image/x-icon" href="./res/assets/icons.png">
     <link rel="stylesheet" type="text/css" href="./res/styles/Styles.css"/>
     <link rel="stylesheet" type="text/css" href="./res/styles/index-style.css"/>
 </head>
 <body>
-    <div>
-        <div>
-            <div class="topPanel">
-                <button class="topPanel-homeBtn" type="reset">Knowledge+</button>
-                <button class="topPanel-loginBtn" type="reset">Войти</button>
+    <div id="loginModal" class="modalRegWindow">
+        <div class="modalRegWindow-object">
+            <h1>Регистрация</h1>
+            <div class="modalRegWindow-divItem">
+                <input placeholder="Логин" type="text" required="text" min="6" max="50" class="modalRegWindow-divInput" id="inputLogin" />
+            </div>
+
+            <div class="modalRegWindow-divItem">
+                <input placeholder="Пароль" type="password" required="password" min="6" max="50" class="modalRegWindow-divInput" id="inputPassword" />
+            </div>
+
+            <div class="modalRegWindow-divItem">
+                <input placeholder="Повторите пароль" type="password" required="password" min="6" max="50" class="modalRegWindow-divInput" id="inputDoublPassword" />
+            </div>
+
+            <div>
+                <button class="modalRegWindow-divBtnClose" id="LoginModalClose">Отмена</button>
+                <button class="modalRegWindow-divBtnReg" id="LoginModalReg">Регистрация</button>
+                <script src="scripts.js"></script>
             </div>
         </div>
 
-        <div class="infoPanel_1">
-            <div class="infoPanel_1-container">
-                <div class="infoPanel_1-trackLeft">
-                    <h1 class="infoPanel_1-item">Платформа</h1>
-                    <h1 class="infoPanel_1-item">Платформа</h1>
-                </div>
+    </div>
+
+    <header>
+        <div class="topPanel">
+            <div class="topPanel-left">
+                <button class="topPanel-homeBtn">
+                    <img class="topPanel-logo" src="./res/assets/icons.png"/>Knowledge+
+                </button>
             </div>
-            <div class="infoPanel_1-container">
-                <div class="infoPanel_1-trackRight">
-                    <h1 class="infoPanel_1-item">Доступного</h1>
-                    <h1 class="infoPanel_1-item">Доступного</h1>
-                </div>
-            </div>
-            <div class="infoPanel_1-container">
-                <div class="infoPanel_1-trackLeft">
-                    <h1 class="infoPanel_1-item">Образования<h1>
-                    <h1 class="infoPanel_1-item">Образования<h1>
-                </div>
-            </div>
-            <div class="infoPanel_1-container">
-                <div class="infoPanel_1-trackRight">
-                    <h1 class="infoPanel_1-item">Knowledge+</h1>
-                    <h1 class="infoPanel_1-item">Knowledge+</h1>
-                </div>
+
+            <div class="topPanel-right">
+                <button class="topPanel-loginBtn">Войти</button>
+                <button id="loginModalOpen" class="topPanel-regBtn">Начать бесплатно</button>
             </div>
         </div>
+    </header>
+
+    <div class="infoPanel">
+        <div class="infoPanelOne">
+            <p class="infoPanelOne-title">Платформа доступного образования</p>
+            <h1>
+                <span class="infoPanelOne-TheSlogan">Учись,</span>
+                <span class="infoPanelOne-TheSlogan">думай,</span>
+                <span class="infoPanelOne-TheSlogan">достигай</span>
+            </h1>
+        </div>
+
+        
     </div>
 </body>
 </html>

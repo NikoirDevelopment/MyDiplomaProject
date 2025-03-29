@@ -8,10 +8,10 @@
     src: url(../assets/fonts/Benzin/Benzin-Regular.ttf);
 }
 
-body{
-    background-color: black ;
+body {
+    background-color: white ;
 }
 
-div{
-    margin-top: 10px;
+button {
+    cursor: pointer;
 }
