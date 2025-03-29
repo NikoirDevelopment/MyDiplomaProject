@@ -1,13 +1,26 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const item = document.getElementById('loginModal');
-    const btnOpen = document.getElementById('loginModalOpen');
-    const btnClose = document.getElementById('LoginModalClose');
+    const itemLog = document.getElementById('logModal');
+    const itemReg = document.getElementById('regModal');
 
-    btnOpen.onclick = function() {
-        item.style.display = 'block';
+    const btnOpenLog = document.getElementById('logModalBtnOpen');
+    const btnCloseLog = document.getElementById('logModalBtnClose');
+
+    const btnOpenReg = document.getElementById('regModalBtnOpen');
+    const btnCloseReg = document.getElementById('regModalBtnClose');
+
+    btnOpenLog.onclick = function() {
+        itemLog.style.display = 'block';
     }
 
-    btnClose.onclick = function() {
-        item.style.display = 'none';
+    btnCloseLog.onclick = function() {
+        itemLog.style.display = 'none';
+    }
+
+    btnOpenReg.onclick = function() {
+        itemReg.style.display = 'block';
+    }
+
+    btnCloseReg.onclick = function() {
+        itemReg.style.display = 'none';
     }
 });

@@ -9,7 +9,27 @@
     <link rel="stylesheet" type="text/css" href="./res/styles/index-style.css"/>
 </head>
 <body>
-    <div id="loginModal" class="modalRegWindow">
+    <div id="logModal" class="modalLogWindow">
+        <div class="modalLogWindow-object">
+            <h1>Авторизация</h1>
+            <div class="modalLogWindow-divItem">
+                <input placeholder="Логин" type="text" required="text" min="6" max="50" class="modalRegWindow-divInput" id="inputLogin" />
+            </div>
+
+            <div class="modalLogWindow-divItem">
+                <input placeholder="Пароль" type="password" required="password" min="6" max="50" class="modalRegWindow-divInput" id="inputPassword" />
+            </div>
+
+            <div>
+                <button class="modalLogWindow-divBtnClose" id="logModalBtnClose">Отмена</button>
+                <script src="scripts.js"></script>
+                <button class="modalLogWindow-divBtnLog" id="logModalBtnOk">Авторизация</button>
+                <script src="scripts.js"></script>
+            </div>
+        </div>
+    </div>
+
+    <div id="regModal" class="modalRegWindow">
         <div class="modalRegWindow-object">
             <h1>Регистрация</h1>
             <div class="modalRegWindow-divItem">
@@ -25,12 +45,12 @@
             </div>
 
             <div>
-                <button class="modalRegWindow-divBtnClose" id="LoginModalClose">Отмена</button>
-                <button class="modalRegWindow-divBtnReg" id="LoginModalReg">Регистрация</button>
+                <button class="modalRegWindow-divBtnClose" id="regModalBtnClose">Отмена</button>
+                <script src="scripts.js"></script>
+                <button class="modalRegWindow-divBtnReg" id="regModalBtnOk">Регистрация</button>
                 <script src="scripts.js"></script>
             </div>
         </div>
-
     </div>
 
     <header>
@@ -42,8 +62,10 @@
             </div>
 
             <div class="topPanel-right">
-                <button class="topPanel-loginBtn">Войти</button>
-                <button id="loginModalOpen" class="topPanel-regBtn">Начать бесплатно</button>
+                <button id="logModalBtnOpen" class="topPanel-loginBtn">Войти</button>
+                <script src="scripts.js"></script>
+                <button id="regModalBtnOpen" class="topPanel-regBtn">Начать бесплатно</button>
+                <script src="scripts.js"></script>
             </div>
         </div>
     </header>

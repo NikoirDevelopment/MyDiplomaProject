@@ -103,10 +103,82 @@ h1 {
 }
 
 
+.modalLogWindow {
+    display: none;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(220, 220, 220, 0.5);
+    justify-items: center;
+    align-content: center;
+    transition: display 0.5s ease;
+}
+
+.modalLogWindow-object {
+    height: 450px;
+    width: 450px;
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    border-radius: 20px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.modalLogWindow-divItem {
+    display: inline-block;
+    margin: 20px auto;
+}
+
+.modalLogWindow-divInput {
+    height: 40px;
+    width: 440px;
+    border-radius: 5px;
+}
+
+.modalLogWindow-divBtnLog {
+    height: 50px;
+    width: 180px;
+    margin: 80px 0px 0px 0px;
+    background-color: black;
+    border-radius: 6px;
+    border: transparent;
+    font-family: Robot;
+    color: white;
+    font-size: 12pt;
+    font-weight: 400;
+    transition: background-color 0.5s ease;
+}
+
+.modalLogWindow-divBtnLog:hover {
+    background-color: gainsboro;
+    color: black;
+}
+
+.modalLogWindow-divBtnClose {
+    height: 50px;
+    width: 180px;
+    background-color: transparent;
+    border-radius: 6px;
+    border: transparent;
+    font-family: Robot;
+    color: black;
+    font-size: 12pt;
+    font-weight: 400;
+    transition: background-color 0.5s ease;
+}
+
+.modalLogWindow-divBtnClose:hover {
+    background-color: gainsboro;
+    color: black;
+}
 
 
 .modalRegWindow {
-    display: block;
+    display: none;
     left: 0;
     top: 0;
     height: 100%;
