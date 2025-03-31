@@ -1,0 +1,71 @@
+/* Глобальные параметры | Начало */
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    padding: 0 10px;
+}
+
+/* Глобальные параметры | Конец */
+
+/* header | Начало */
+
+.headers {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.headers__itemLogo {
+    background-color: transparent;
+    border-color: transparent;
+    font-family: Robot;
+    font-weight: 600;
+    font-size: 22pt;
+}
+
+.headers__items {
+    justify-content: right;
+    align-content: center;
+}
+
+.headers__items-login {
+    padding: 5px;
+    background-color: transparent;
+    border-color: transparent;
+    border-radius: 5px;
+    font-family: Robot;
+    font-size: 10pt;
+    transition: background-color 0.5s ease;
+}
+
+.headers__items-login:hover {
+    background-color: gainsboro;
+}
+
+.headers__items-registration {
+    margin-right: 10px;
+    padding: 5px;
+    background-color: black;
+    border-color: transparent;
+    border-radius: 5px;
+    font-family: Robot;
+    font-size: 10pt;
+    color: white;
+    transition: background-color 0.5s ease;
+}
+
+.headers__items-registration:hover {
+    background-color: gainsboro;
+    color: black;
+}
+
+/* header | Конец */
+
+/* main | Начало */
+
+
+
+/* main | Конец */
