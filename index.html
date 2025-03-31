@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/assets/res/icons.png" rel="icon" type="png">
+    <link rel="icon" href="/assets/res/icons.png" type="png">
     <link rel="stylesheet" href="./assets/styles/fonts.css">
-    <link href="./assets/styles/index-style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/index-style.css">
     <title>Knowledge+</title>
 </head>
 <body>
@@ -13,24 +13,38 @@
         <div class="headers">
             <button class="headers__itemLogo">Knowledge+</button>
             <div class="headers__items">
-                <button class="headers__items-login">Войти</button>
-                <button class="headers__items-registration">Начать бесплатно</button>
+                <button onclick="btnAuth()" class="headers__items-login">Войти</button>
+                <button onclick="btnReg()" class="headers__items-registration">Начать бесплатно</button>
             </div>
         </div>
     </header>
 
     <main class="container">
-        <div>
-            
+        <div class="main">
+            <h1 class="main__title">Платформа доступного образования</h1>
+            <h1 class="main__quote">Учись, думай, достигай</h1>
+            <h1 class="main__logo">Knowledge+</h1>
+            <button onclick="btnReg()" class="main__items-registration">Начать бесплатно</button>
+            <div class="main__items-image">
+
+            </div>
         </div>
-
-        <section>
-
-        </section>
     </main>
 
     <footer class="container">
-
+        <p class="footers">© 2025 NikoirGroup · С любовью к пользователям ❤️</p>
     </footer>
+
+    <script>
+        function btnAuth() {
+            window.location.href = './assets/pages/auth.html';
+        }
+    </script>
+
+    <script>
+        function btnReg() {
+            window.location.href = './assets/pages/reg.html';
+        }
+    </script>
 </body>
 </html>

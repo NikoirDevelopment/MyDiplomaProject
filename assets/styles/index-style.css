@@ -5,6 +5,8 @@ button {
 }
 
 .container {
+    min-width: 800px;
+    margin: 10px;
     padding: 0 10px;
 }
 
@@ -57,7 +59,8 @@ button {
     transition: background-color 0.5s ease;
 }
 
-.headers__items-registration:hover {
+.headers__items-registration:hover,
+.main__items-registration:hover {
     background-color: gainsboro;
     color: black;
 }
@@ -66,6 +69,66 @@ button {
 
 /* main | Начало */
 
+.main {
+    justify-items: center;
+}
 
+.main__title {
+    margin-top: 60px;
+    text-align: center;
+    font-family: Robot;
+    font-size: 16pt;
+    font-weight: inherit;
+}
+
+.main__quote {
+    text-align: center;
+    font-family: Robot;
+    font-size: 36pt;
+    font-weight: bold;
+}
+
+.main__logo {
+    text-align: center;
+    font-family: Robot;
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+.main__items-registration {
+    padding: 5px;
+    background-color: black;
+    border-color: transparent;
+    border-radius: 5px;
+    font-family: Robot;
+    font-size: 10pt;
+    color: white;
+    transition: background-color 0.5s ease;
+}
+
+.main__items-box {
+    align-items: center;
+    justify-items: center;
+    height: 450px;
+    width: 1200px;
+    background-color: blue;
+}
+
+.main__items-image {
+    margin-top: 20px;
+    background-color: aqua;
+    height: 450px;
+    width: 850px;
+}
 
 /* main | Конец */
+
+/* footer | Начало */
+
+.footers {
+    margin-top: 50px;
+    text-align: center;
+    font-family: Robot;
+}
+
+/* footer | Конец */
