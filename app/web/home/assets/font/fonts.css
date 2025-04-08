@@ -1,3 +1,11 @@
 ﻿@font-face {
-    
+    font-family: 'Roboto';
+    src:
+        local('Roboto'),
+        local('RobotoThin'),
+        local('Roboto Thin'),
+        local('Roboto-Thin'),
+        url('Roboto.eot') format('woff');
+        url('Roboto.eot') format('Woff2');
+        url('Roboto.eot') format('eot');
 }

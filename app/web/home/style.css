@@ -3,21 +3,26 @@
     border: none;
     font-weight: 400;
     cursor: pointer;
-    font-family: 'Robot';
-}
-
-.container {
-    width: 100%;
-    min-width: 800px;
+    font-family: Roboto, sans-serif;
+    font-size: 11pt;
 }
 
 a {
     text-decoration: none;
     background-color: transparent;
     border: none;
-    font-weight: 400;
+    font-weight: bolder;
     color: black;
-    font-family: 'Robot';
+    font-family: Roboto, sans-serif;
+    font-size: 12pt;
+}
+
+p {
+    font-family: Roboto, sans-serif;
+}
+
+h1 {
+    font-family: Roboto, sans-serif;
 }
 
 /* header-start */
@@ -42,7 +47,6 @@ a {
     margin-right: -25px;
     padding: 0;
     font-size: 22pt;
-    font-weight: bold;
 }
 
 .items_left__navigation {
@@ -50,7 +54,6 @@ a {
     padding: 15px;
     background-color: transparent;
     border-radius: 5px;
-    font-size: 14pt;
     transition: background-color 0.3s ease;
 }
 
@@ -60,19 +63,17 @@ a {
 }
 
 .items_right__authButton {
-    margin-right: 15px;
+    margin-right: 12px;
     height: 45px;
     border-radius: 5px;
-    font-size: 14pt;
     transition: background-color 0.3s ease;
 }
 
 .items_right__regButton {
-    height: 45px;
-    width: 180px;
+    height: 38px;
+    width: 145px;
     background-color: black;
     border-radius: 5px;
-    font-size: 14pt;
     color: white;
     transition: background-color 0.3s ease;
 }
@@ -81,7 +82,38 @@ a {
 
 /* main_start */
 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 800px;
+}
 
+.container__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container__main__p {
+    font-size: 14pt;
+    margin: 80px 0 0 0;
+}
+
+.container__main__h1 {
+    font-size: 36pt;
+    margin: 40px 0 40px 0;
+}
+
+.container__main__regButton {
+    height: 38px;
+    width: 145px;
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    transition: background-color 0.3s ease;
+}
 
 /* main_end */
 
@@ -98,7 +130,8 @@ a {
     background-color: lightgray;
 }
 
-.items_right__regButton:hover {
+.items_right__regButton:hover,
+.container__main__regButton:hover {
     background-color: lightgray;
     color: black;
 }
